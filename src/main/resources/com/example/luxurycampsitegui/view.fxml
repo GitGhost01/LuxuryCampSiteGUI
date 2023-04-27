@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="823.0" prefWidth="1237.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.luxurycampsitegui.Controller">
+   <children>
+      <ImageView fitHeight="841.0" fitWidth="1237.0" layoutY="-1.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../LuxuryAcom.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="20.0" text="Luxury Camp Site" textFill="WHITE">
+         <font>
+            <Font name="Georgia Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="74.0" text="Area" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="57.0" text="Number of Breakfasts" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="breakfastReqTextField" layoutX="1021.0" layoutY="58.0" prefHeight="25.0" prefWidth="39.0" text="0" />
+      <TableView fx:id="table" layoutX="31.0" layoutY="190.0" onMouseClicked="#displaySelected" prefHeight="220.0" prefWidth="696.0">
+        <columns>
+          <TableColumn fx:id="numberCol" prefWidth="64.0" text="Number" />
+          <TableColumn fx:id="accommodationTypeCol" prefWidth="131.0" text="Accommodation Type" />
+            <TableColumn fx:id="occupancyCol" prefWidth="104.0" text="Occupancy" />
+            <TableColumn fx:id="availabilityCol" prefWidth="113.0" text="Availability" />
+            <TableColumn fx:id="statusCol" prefWidth="110.0" text="Status" />
+            <TableColumn fx:id="guestsCol" prefWidth="81.0" text="Guests" />
+            <TableColumn fx:id="breakfastCol" prefWidth="92.0" text="Breakfast" />
+        </columns>
+      </TableView>
+      <Label layoutX="768.0" layoutY="86.0" prefHeight="27.0" prefWidth="220.0" text="Number Require Cleaning" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cleaningReqTextField" layoutX="1021.0" layoutY="87.0" prefHeight="25.0" prefWidth="39.0" text="0" />
+      <Label layoutX="412.0" layoutY="439.0" text="Accomodation Reception" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="-26.0" endY="358.9306640625" layoutX="427.0" layoutY="436.0" startX="-26.0" startY="-10.0693359375" stroke="WHITE" strokeWidth="3.0" />
+      <Label layoutX="37.0" layoutY="651.0" prefHeight="35.0" prefWidth="190.0" text="Cleaning Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="439.0" text="Accomodation Info" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="491.0" prefHeight="35.0" prefWidth="241.0" text="Accommodation Type" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="526.0" prefHeight="35.0" prefWidth="260.0" text="Accommodation Number" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="562.0" text="Accommodates" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="593.0" text="Price Per Night" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="accommodationTypeTextField" layoutX="296.0" layoutY="496.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextField fx:id="accommodationNumberTextField" layoutX="296.0" layoutY="531.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextField fx:id="pricePerNightTextField" layoutX="296.0" layoutY="598.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextField fx:id="accommodatesTextField" layoutX="296.0" layoutY="567.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextField fx:id="areaDescriptionTextField" layoutX="31.0" layoutY="130.0" prefHeight="35.0" prefWidth="696.0" />
+      <Label layoutX="412.0" layoutY="491.0" prefHeight="35.0" prefWidth="220.0" text="First Name" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="526.0" prefHeight="35.0" prefWidth="220.0" text="Last Name" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="561.0" prefHeight="35.0" prefWidth="220.0" text="Telephone No." textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="593.0" prefHeight="35.0" prefWidth="220.0" text="Number of Guests" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="627.0" prefHeight="35.0" prefWidth="220.0" text="Check in Date" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="663.0" prefHeight="35.0" prefWidth="220.0" text="Number of Nights" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="breakfastRequiredCheckBox" layoutX="412.0" layoutY="711.0" mnemonicParsing="false" text="Breakfast Required" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="checkInButton" layoutX="412.0" layoutY="767.0" mnemonicParsing="false" onAction="#checkedIn" text="Check In">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="checkOutButton" layoutX="498.0" layoutY="767.0" mnemonicParsing="false" onAction="#checkedOut" text="Check Out">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="firstNameTextField" layoutX="613.0" layoutY="496.0" prefHeight="25.0" prefWidth="121.0" />
+      <TextField fx:id="lastNameTextField" layoutX="613.0" layoutY="531.0" prefHeight="25.0" prefWidth="121.0" />
+      <TextField fx:id="telephoneTextField" layoutX="613.0" layoutY="567.0" prefHeight="25.0" prefWidth="121.0" />
+      <TextField fx:id="numberOfGuestsTextField" layoutX="613.0" layoutY="598.0" prefHeight="25.0" prefWidth="121.0" />
+      <TextField fx:id="numberOfNightsTextField" layoutX="613.0" layoutY="668.0" prefHeight="25.0" prefWidth="121.0" />
+      <ComboBox fx:id="areaComboBox" layoutX="108.0" layoutY="79.0" prefHeight="25.0" prefWidth="211.0" promptText="Select an area" />
+      <ComboBox fx:id="cleaningStatusComboBox" layoutX="37.0" layoutY="698.0" prefHeight="30.0" prefWidth="171.0" promptText="Select a cleaning status" />
+      <DatePicker fx:id="checkInDatePicker" layoutX="613.0" layoutY="632.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label layoutX="770.0" layoutY="23.0" prefHeight="35.0" prefWidth="211.0" text="Overview" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="-26.0" endY="757.9306640625" layoutX="783.0" layoutY="30.0" startX="-26.0" startY="-12.0693359375" stroke="WHITE" strokeWidth="3.0" />
+      <Label layoutX="768.0" layoutY="139.0" prefHeight="27.0" prefWidth="128.0" text="Shepherd Hut 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="245.0" prefHeight="25.0" prefWidth="53.0" text="Yurt 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="385.0" prefHeight="25.0" prefWidth="134.0" text="Geodesic Dome 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="528.0" text="Cabin 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="174.0" prefHeight="27.0" prefWidth="128.0" text="Shepherd Hut 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="209.0" prefHeight="27.0" prefWidth="128.0" text="Shepherd Hut 3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="280.0" prefHeight="25.0" prefWidth="53.0" text="Yurt 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="315.0" prefHeight="25.0" prefWidth="53.0" text="Yurt 3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="350.0" prefHeight="25.0" prefWidth="53.0" text="Yurt 4" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="420.0" prefHeight="25.0" prefWidth="134.0" text="Geodesic Dome 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="456.0" prefHeight="25.0" prefWidth="134.0" text="Geodesic Dome 3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="492.0" prefHeight="25.0" prefWidth="134.0" text="Geodesic Dome 4" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="564.0" text="Cabin 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="598.0" text="Cabin 3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="geodesicDome3TextField" layoutX="914.0" layoutY="456.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="cabin2TextField" layoutX="914.0" layoutY="564.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="cabin3TextField" layoutX="914.0" layoutY="598.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="geodesicDome4TextField" layoutX="914.0" layoutY="492.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="cabin1TextField" layoutX="914.0" layoutY="528.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="geodesicDome1TextField" layoutX="914.0" layoutY="385.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="geodesicDome2TextField" layoutX="914.0" layoutY="420.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="yurt3TextField" layoutX="914.0" layoutY="315.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="yurt2TextField" layoutX="914.0" layoutY="280.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="yurt4TextField" layoutX="914.0" layoutY="350.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="yurt1TextField" layoutX="914.0" layoutY="245.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="shepherdHut2TextField" layoutX="914.0" layoutY="175.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="shepherdHut3TextField" layoutX="914.0" layoutY="210.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="shepherdHut1TextField" layoutX="914.0" layoutY="140.0" prefHeight="25.0" prefWidth="309.0" />
+      <Button fx:id="updateCleanStatusButton" layoutX="222.0" layoutY="698.0" mnemonicParsing="false" onAction="#updateCleaning" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
